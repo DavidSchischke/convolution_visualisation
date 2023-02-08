@@ -3,7 +3,7 @@
 This repo is contains code that visualizes the activation of different convolutions for a set of given inputs. It uses a 
 **LeNet5** architecture with **MNIST** data in **PyTorch**. This is not a very sophisticated script, but something I was
 interested in after watching a [3blue1brown video on Convolutions](https://youtu.be/KuXjwB4LzSA). I figured it might be 
-interesting to some other people as well.
+interesting to some other people as well. All (relevant) functions can be found in the (`visualization_functions.py`)[https://github.com/daaawit/convolution_visualisation/blob/main/visualization_functions.py] file and should be documented well enough to be usable.
 
 ## Results
 
@@ -11,7 +11,7 @@ The LeNet-architecture ([LeCun et al., 1998](https://ieeexplore.ieee.org/abstrac
 small convolutions as the first two layers, making it ideal for this approach. The final model has an accuracy of 99.1%, 
 so I assume the output of the Convolutions is fairly "helpful" for the classification task at hand. **All results can be 
 found in the `media` folder** - in addition to the gifs in this readme, every slide of the gifs is also available as a 
-.png file. All functions can be found in the (`visualization_functions.py`)[https://github.com/daaawit/convolution_visualisation/blob/main/visualization_functions.py] file
+.png file. 
 
 ### `conv1` layer
 

@@ -92,7 +92,7 @@ def plot_conv_activation(
     kernel_size: int = 5,
     sigma: float = 2,
     save_plot: bool = False,
-    figsize: tuple[int] = (16, 16)
+    figsize: tuple[int] = (12, 12)
 ) -> None:
     """
     Plots the output of all convolutions of a certain layer for a given input digit. Can add
@@ -152,14 +152,18 @@ def plot_conv_activation(
     fig.tight_layout()
     if save_plot:
         if blur:
-            plt.savefig(f"media/{layer_name}/{input_digit}_blur_{kernel_size}_{sigma}.png", dpi=300)
+            plt.savefig(f"media/{layer_name}/{input_digit}_blur_{kernel_size}_{sigma}.png", dpi=72)
         else:
-            plt.savefig(f"media/{layer_name}/{input_digit}.png", dpi=300)
+            plt.savefig(f"media/{layer_name}/{input_digit}.png", dpi=72)
     else:
         plt.show()
+    
+    plt.close()
+    plt.clf()
+    plt.cla()
 
 
-def show_sample_imgs(figsize: tuple[int, int] = (16, 9), save_plot: bool = False) -> None:
+def show_sample_imgs(figsize: tuple[int, int] = (13, 7), save_plot: bool = False) -> None:
     """
     Reads all sample images and plots them in a 2x5 plot. Very basic.
 
@@ -183,8 +187,7 @@ def show_sample_imgs(figsize: tuple[int, int] = (16, 9), save_plot: bool = False
 
     fig.tight_layout()
     if save_plot:
-        plt.savefig("media/sample_image_plot.png", dpi=300)
-        plt.close()
+        plt.savefig("media/sample_image_plot.png", dpi=72)
     else:
         plt.show()
 
