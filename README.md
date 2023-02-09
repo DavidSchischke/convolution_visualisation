@@ -3,7 +3,7 @@
 This repo is contains code that visualizes the activation of different convolutions for a set of given inputs. It uses a 
 **LeNet5** architecture with **MNIST** data in **PyTorch**. This is not a very sophisticated script, but something I was
 interested in after watching a [3blue1brown video on Convolutions](https://youtu.be/KuXjwB4LzSA). I figured it might be 
-interesting to some other people as well. All (relevant) functions can be found in the (`visualization_functions.py`)[https://github.com/daaawit/convolution_visualisation/blob/main/visualization_functions.py] file and should be documented well enough to be usable.
+interesting to some other people as well. All (relevant) functions can be found in the [`visualization_functions.py](https://github.com/daaawit/convolution_visualisation/blob/main/visualization_functions.py) file and should be documented well enough to be usable.
 
 ## Results
 
